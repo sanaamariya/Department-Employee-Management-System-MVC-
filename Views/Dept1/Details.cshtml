@@ -1,0 +1,36 @@
+@model crudapp.Models.Dept
+@{
+    ViewBag.Title ="Details";
+}
+<div class="welcome-box text-start">
+<h2>Details</h2>
+<div>
+   
+    <hr/>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model =>model.dno)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.dno)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.dna)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.dna)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.dloc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model =>model.dloc)
+        </dd>
+    </dl>
+</div>
+<p>
+    <a class="btn btn-primary me-2" href="@Url.Action("Edit", new { id = Model.dno })">Edit</a>
+    <a class="btn btn-secondary" href="@Url.Action("Index")">Back to List</a>
+
+</p>
+</div>

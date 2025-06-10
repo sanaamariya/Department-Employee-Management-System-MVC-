@@ -1,0 +1,41 @@
+@model IEnumerable<crudapp.Models.Dept>
+@{
+    ViewBag.Title ="Index";    
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New","Create","Dept1",null, new { @class = "btn btn-success"})
+</p>
+<table class="table">
+    <thead class="table-success">
+    <tr>
+        <th>Deptno</th>
+        <th>DName</th>
+        <th>DLoc</th>
+        <th>Actions</th>
+        
+    </tr>
+    </thead>
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem=>item.dno)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem=>item.dna)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem=>item.dloc)
+        </td>
+        <td>
+             <a class="btn btn-secondary btn-sm" href="@Url.Action("Edit", new { id = item.dno })">Edit</a>
+             <a class="btn btn-info btn-sm" href="@Url.Action("Details", new { id = item.dno })">Details</a>
+             <a class="btn btn-danger btn-sm" href="@Url.Action("Delete", new { id = item.dno })">Delete</a>
+
+        </td>
+    </tr>
+}
+</table>

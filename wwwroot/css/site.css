@@ -1,0 +1,125 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+
+  background-image: url('/Images/sarah-dorweiler-m2J105CzEAU-unsplash.jpg'); /* Adjust the path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.welcome-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 100px auto;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.welcome-container {
+  text-align: center;
+  margin: 100px auto;
+  max-width: 600px;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  color: #fff;
+  
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.welcome-text {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.welcome-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.welcome-subtitle a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.welcome-subtitle a:hover {
+  text-decoration: underline;
+}
+
+.welcome-text {
+  margin-bottom: 30px;
+}
+
+.custom-blue-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  font-weight: bold;
+}
+
+.custom-blue-btn:hover {
+  background-color: #2980b9;
+}
+
+.navbar-brand img {
+  vertical-align: middle;
+  max-height: 40px;
+}
+
+table thead th {
+  background-color: #4CAF50; /* green */
+  color: white; /* text color */
+}
